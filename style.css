@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('2.jpg') center/cover no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 1000px;
+  }
+
+  #monitor-container {
+    background-color: rgba(223, 213, 213, 0.7); /* set alpha value to 0.7 for 70% opacity */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  #cpuUsage,
+  #memoryUsage,
+  #diskUsage {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .progress-bar {
+    background-image: linear-gradient(to right, #e0f2f1, #b2dfdb);
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .progress {
+    height: 100%;
+    background-color: #4caf50;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    transition: width 0.5s;
+  }
+
+  .progress-bar:hover .progress {
+    width: 100%;
+    animation: none;
+  }

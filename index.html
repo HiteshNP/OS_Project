@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>System Analysis - Real-time CPU, Memory & Disk Usage Monitor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="monitor-container">
+      <h1>System Analysis</h1>
+      <div id="cpuUsage">CPU Usage: -</div>
+      <div class="progress-bar">
+        <div class="progress" id="cpuProgress" style="width: 0%;"></div>
+      </div>
+      <div id="memoryUsage">Memory Usage: -</div>
+      <div class="progress-bar">
+        <div class="progress" id="memoryProgress" style="width: 0%;"></div>
+      </div>
+      <div id="diskUsage">Disk Usage: -</div>
+      <div class="progress-bar">
+        <div class="progress" id="diskProgress" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
